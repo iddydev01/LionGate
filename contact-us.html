@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Liongate Adventures</title>
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="destinations.css">
+    <link rel="stylesheet" href="home.css"> <!-- Links shared Top Bar, Header, and Expanded Footer styles -->
+    
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- STEP 1: TOP CONTACT BAR (Consistent with Index) -->
+    <div class="top-bar">
+        <div class="top-bar-container">
+            <div class="top-bar-contact">
+                <a href="tel:+255791305222"><i class="fas fa-phone"></i> +255 791 305 222</a>
+                <a href="mailto:liongateadventures@gmail.com"><i class="fas fa-envelope"></i> liongateadventures@gmail.com</a>
+                <span class="top-bar-tag"><i class="fas fa-star"></i> Local Tanzanian Safari Experts</span>
+            </div>
+            <div class="top-bar-actions">
+                <a href="https://wa.me/255626069410" target="_blank" rel="noopener noreferrer" class="whatsapp-top-link"><i class="fab fa-whatsapp"></i> Chat on WhatsApp</a>
+                <a href="destinations.html#book-tour" class="top-cta-btn">Plan Your Safari</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- STEP 2: MAIN HEADER & NAVIGATION (Consistent with Index) -->
+    <header id="header">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="logo.png" alt="Liongate Adventures Logo" class="logo-img">
+                <span>LIONGATE <span>ADVENTURES</span></span>
+            </a>
+            <div class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="index.html#about" class="nav-link">About Us</a></li>
+                    <li class="nav-item"><a href="destinations.html" class="nav-link">Destinations</a></li>
+                    <li class="nav-item"><a href="index.html#safaris" class="nav-link">Safari Packages</a></li>
+                    <li class="nav-item"><a href="index.html#why-choose-us" class="nav-link">Why Choose Us</a></li>
+                    <li class="nav-item"><a href="contact-us.html" class="nav-link">Contact us</a></li>
+                    <li class="nav-item"><a href="contact-us.html" class="nav-cta-btn">Request a Quote</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Contact Section -->
+    <section class="contact-page-section">
+        <div class="contact-page-container">
+            <div class="contact-intro-card">
+                <p class="contact-eyebrow">Plan your next adventure</p>
+                <h1>Let’s create your perfect Tanzania safari</h1>
+                <p>Whether you are planning a luxury retreat, family holiday, or a classic wildlife adventure, our local team is ready to guide you every step of the way.</p>
+                <div class="contact-highlights">
+                    <div>
+                        <i class="fas fa-map-marked-alt"></i>
+                        <span>Tailor-made itineraries</span>
+                    </div>
+                    <div>
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Trusted local experts</span>
+                    </div>
+                    <div>
+                        <i class="fas fa-comments"></i>
+                        <span>Fast WhatsApp response</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form-card">
+                <div class="booking-header">
+                    <h2>Get In Touch</h2>
+                    <div class="title-underline"></div>
+                    <p>Have questions about a safari or need help planning your trip? Send us a message!</p>
+                </div>
+                <form action="https://formsubmit.co/liongateadventures@gmail.com" method="POST" class="booking-form">
+                    <input type="hidden" name="_next" value="thank.html">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Full Name</label>
+                            <input type="text" name="Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Email Address</label>
+                            <input type="email" name="Email" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Message</label>
+                        <textarea name="Message" rows="5" placeholder="How can we help you?" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message <i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-grid-expanded">
+            <div class="footer-col brand-col">
+                <a href="index.html" class="footer-logo">
+                    <img src="logo.png" alt="Liongate Adventures Logo" class="logo-img">
+                </a>
+                <p>Experience the ultimate African safari with top-tier guides and unforgettable wildlife encounters in the heart of Tanzania.</p>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/share/18WwqmgvqR/"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/liongateadventures?igsh=ZWJ4dWM3NXJkbnVv"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@liongate.adventures?_r=1&_t=ZS-94nAV9uUIAk"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <ul class="footer-contact">
+                    <li><i class="fas fa-map-marker-alt"></i> Arusha, Tanzania</li>
+                    <li><i class="fas fa-phone"></i> +255 791 305 222</li>
+                    <li><i class="fas fa-envelope"></i> liongateadventures@gmail.com</li>
+                    <li><i class="fab fa-whatsapp"></i> Chat on WhatsApp</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; <span id="current-year"></span> Liongate Adventures. All Rights Reserved. | Terms | Cancellation Policy | Responsible Tourism Policy</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Buttons -->
+    <a href="https://wa.me/255626069410" class="whatsapp-float" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-whatsapp"></i>
+        <span class="wa-text">Need Help? Chat with us</span>
+    </a>
+    <a href="https://www.tripadvisor.com/Profile/liongatea" class="tripadvisor-float" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-tripadvisor"></i>
+        <span class="ta-text">Read our reviews</span>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
