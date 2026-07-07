@@ -358,6 +358,42 @@ body.menu-open {
     font-weight: 600;
 }
 
+.day-card {
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 14px 35px rgba(0, 0, 0, 0.08);
+    padding: 28px;
+    margin-bottom: 24px;
+}
+
+.day-card h1,
+.day-card h2,
+.day-card h3 {
+    margin-top: 0;
+    color: var(--secondary-color);
+    font-family: var(--font-heading);
+}
+
+.day-card p,
+.day-card li {
+    color: #555;
+    line-height: 1.8;
+}
+
+.day-card ul {
+    padding-left: 20px;
+    display: grid;
+    gap: 8px;
+}
+
+.day-card img {
+    width: 100%;
+    max-height: 320px;
+    object-fit: cover;
+    border-radius: 16px;
+    margin-top: 16px;
+}
+
 .section-cta {
     margin-top: 28px;
     text-align: center;
@@ -1604,4 +1640,158 @@ body.menu-open {
     .footer-grid-expanded {
         grid-template-columns: 1fr;
     }
+}
+
+/* --- Southern Circuit Destinations Styles --- */
+
+.destination-section {
+    padding: 80px 0;
+    background-color: #faf7f2; /* Subtle warm stone/sand background color */
+}
+
+.destination-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.destination-section .section-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.destination-section .section-title h2 {
+    font-size: 32px;
+    font-family: 'Playfair Display', Georgia, serif; /* Safari brand style serif font */
+    color: #1c1917; /* Off-black */
+    margin-bottom: 12px;
+    font-weight: 700;
+}
+
+.destination-section .divider {
+    width: 60px;
+    height: 3px;
+    background-color: #b45309; /* Warm Amber */
+    margin: 0 auto 16px auto;
+}
+
+.destination-section .section-title p {
+    font-size: 16px;
+    color: #57534e; /* Warm Muted Slate */
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* 
+   Responsive Flexible Grid:
+   Dynamically aligns the 5 items so they stack neatly on mobile 
+   and form clean, balanced columns on larger monitors.
+*/
+.destination-section .destination-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+/* Individual Card Styling */
+.destination-section .destination-card {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    text-decoration: none;
+    box-shadow: 0 4px 12px rgba(28, 25, 23, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #e7e5e4;
+}
+
+.destination-section .destination-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(28, 25, 23, 0.1);
+}
+
+/* Image Container */
+.destination-section .destination-image {
+    position: relative;
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+    background-color: #e7e5e4;
+}
+
+.destination-section .destination-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.destination-section .destination-card:hover .destination-image img {
+    transform: scale(1.06);
+}
+
+/* Text Content Area */
+.destination-section .destination-info {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.destination-section .destination-info h3 {
+    font-size: 20px;
+    color: #1c1917;
+    margin: 0 0 10px 0;
+    font-weight: 600;
+}
+
+.destination-section .destination-info p {
+    font-size: 14px;
+    color: #57534e;
+    line-height: 1.5;
+    margin: 0 0 20px 0;
+    flex-grow: 1;
+}
+
+.destination-section .destination-link {
+    font-size: 14px;
+    color: #b45309; /* Theme Accent */
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: gap 0.2s ease;
+}
+
+.destination-section .destination-card:hover .destination-link {
+    gap: 12px;
+}
+
+/* CTA Elements */
+.destination-section .section-cta {
+    text-align: center;
+}
+
+.destination-section .btn-primary {
+    display: inline-block;
+    padding: 14px 28px;
+    background-color: #b45309; /* Solid Amber */
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 15px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.destination-section .btn-primary:hover {
+    background-color: #92400e; /* Darker amber tint */
+}
+
+.destination-section .btn-primary:active {
+    transform: scale(0.98);
 }

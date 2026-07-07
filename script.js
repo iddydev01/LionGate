@@ -68,3 +68,15 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const destinationCards = document.querySelectorAll('.destination-section .destination-card');
+    
+    destinationCards.forEach(card => {
+        card.addEventListener('click', (e) => {
+            const destinationName = card.querySelector('h3').textContent;
+            console.log(`User clicked on destination: ${destinationName}`);
+            // You can insert integration hooks here for analytics, such as Google Tag Manager
+        });
+    });
+});
